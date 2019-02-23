@@ -1,6 +1,4 @@
 package Taller2;
-
-import Taller1.*;
 import java.io.*;
 public class leer
 {
