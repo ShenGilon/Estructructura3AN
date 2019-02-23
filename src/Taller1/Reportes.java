@@ -22,13 +22,13 @@ public class Reportes {
         obj1.Nombre = leer.dato();
         
           System.out.println("Ingrese su CC: ");
-        obj1.cc= leer.datoInt();
+        obj1.cc= (int) leer.datoLong();
 
         
  
         System.out.println("Ingrese su celular: ");
         obj1.setCelular(leer.datoLong());
-
+        
          System.out.println("Ingrese su cuenta: ");
         obj1.setCuenta(leer.datoLong());
 

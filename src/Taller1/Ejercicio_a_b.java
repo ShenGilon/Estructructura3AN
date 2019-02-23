@@ -1,6 +1,6 @@
 package Taller1;
 
-public class principal {
+public class Ejercicio_a_b {
 
    
     public static void main(String[] args) {
@@ -8,5 +8,6 @@ public class principal {
        obj2.Muestra();
         
     }
+    
     
 }

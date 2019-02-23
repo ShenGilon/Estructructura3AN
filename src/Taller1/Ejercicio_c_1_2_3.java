@@ -3,7 +3,7 @@ package Taller1;
 /**
  * @author steward & ShenGilon
  */
-public class EjercicioC {
+public class Ejercicio_c_1_2_3 {
 
     public static void main(String[] args) {
         int a, cant, act = 1, ant = 0, pos, acumI = 0, num, encontrado = 0, suma = 0;
