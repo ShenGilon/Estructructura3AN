@@ -27,7 +27,7 @@ public class Reportes {
         
  
         System.out.println("Ingrese su celular: ");
-        obj1.setCelular((long) leer.datoDouble());
+        obj1.setCelular((int) leer.datoInt());
 
          System.out.println("Ingrese su cuenta: ");
         obj1.setCuenta((long) leer.datoDouble());
