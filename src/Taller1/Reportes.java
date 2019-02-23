@@ -35,7 +35,11 @@ public class Reportes {
         System.out.println("Ingrese su sueldo: ");
         obj1.setSueldo(leer.datoInt());
 
-        
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+
         
          System.out.println(obj1.Direccion);
         System.out.println(obj1.Nombre);
