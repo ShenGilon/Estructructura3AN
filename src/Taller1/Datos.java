@@ -3,7 +3,7 @@ package Taller1;
 public class Datos {
 
     public String Nombre = "pepe";
-    public int cc = 11111;
+    public int cc = 1234567891;
     public String Direccion = "Calle 4 8-30";
     private int sueldo = 8000000;
     private long celular = 310636363;
