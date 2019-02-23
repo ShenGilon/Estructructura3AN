@@ -18,5 +18,6 @@ public class Reportes {
         System.out.println("Ingrese su celular: ");
         obj1.setCelular(leer.datoInt());
 
+         
     }
 }
