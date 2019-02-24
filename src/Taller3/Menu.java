@@ -10,8 +10,8 @@ public class Menu {
 
         while (ciclo == 6) {
             System.out.println("Menu");
-            System.out.println("1. Ajedrez");
-            System.out.println("2. ejercicio1");
+            System.out.println("1. AJEDREZ");
+            System.out.println("2. MENOR A MAYOR");
             System.out.println("3. ejercicio1");
             System.out.println("4. salir");
             System.out.println("Digite Opcion");

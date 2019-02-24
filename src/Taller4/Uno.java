@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Taller3;
+package Taller4;
+
+import Taller3.leer;
 
 /**
  *

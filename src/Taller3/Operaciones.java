@@ -38,10 +38,64 @@ public class Operaciones {
         System.out.println("");
     }
 
+    
+    
+    
+    
+    
+    
+    
     void ejercicio2() {
-        System.out.println("Estoy en 2");
+        int Num1, Num2, Num3;
+      System.out.println("");
+        System.out.println("");
+        System.out.println("*******");
+        System.out.println("MENOR A MAYOR");
+        System.out.println("*******");
+        
+        System.out.println("Ingrese El Primer Numero");
+        Num1=leer.datoInt();
+        
+         System.out.println("Ingrese El Segundo Numero");
+        Num2=leer.datoInt();
+        
+         System.out.println("Ingrese El Tercer Numero");
+        Num3=leer.datoInt();
+        
+        
+           System.out.println("");
+            System.out.println("RESULTADO");
+        
+        
+        if (Num1 < Num2 && Num1 < Num3) {
+            if (Num2 < Num3) {
+                System.out.println(Num1 + " " + Num2 + " " + Num3 );
+            } else {
+                 System.out.println(Num1 + " " + Num3 + " " + Num2 );
+            }
+        }
+        else if (Num2 < Num1 && Num2 < Num3) {
+            if (Num1 < Num3) {
+                System.out.println(Num2 + " " + Num1 + " " + Num3 );
+            } else {
+                 System.out.println(Num2 + " " + Num3 + " " + Num1 );
+            }
+        }  
+       
+        else if (Num3 < Num1 && Num3 < Num2) {
+            if (Num3 < Num2) {
+                System.out.println(Num3 + " " + Num1 + " " + Num3 );
+            } else {
+                 System.out.println(Num3 + " " + Num2 + " " + Num3 );
+            }
+        } 
+          System.out.println("");
+          System.out.println("");
     }
 
+      
+        
+        
     void ejercicio3() {
         System.out.println("Estoy en 3");
     }

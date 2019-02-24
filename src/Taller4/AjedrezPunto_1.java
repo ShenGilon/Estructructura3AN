@@ -1,4 +1,6 @@
-package Taller3;
+package Taller4;
+
+import Taller3.leer;
 
 public class AjedrezPunto_1 {
 
