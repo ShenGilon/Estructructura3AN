@@ -12,7 +12,7 @@ public class Menu {
             System.out.println("Menu");
             System.out.println("1. AJEDREZ");
             System.out.println("2. MENOR A MAYOR");
-            System.out.println("3. ejercicio1");
+            System.out.println("3. PLACAS DE AUTOS");
             System.out.println("4. salir");
             System.out.println("Digite Opcion");
 
@@ -25,6 +25,7 @@ public class Menu {
                 case 2:
                     op.ejercicio2();
                     break;
+                            
                 case 3:
                     op.ejercicio3();
                     break;

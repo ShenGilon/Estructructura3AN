@@ -97,7 +97,42 @@ public class Operaciones {
         
         
     void ejercicio3() {
-        System.out.println("Estoy en 3");
+       System.out.println("");
+        System.out.println("");
+        System.out.println("*******");
+        System.out.println("PLACA DE AUTOS");
+        System.out.println("*******");
+            int ncarros = 0, carros, camarillo = 0, crosa = 0, croja = 0, cverde = 0, cazul = 0;
+        System.out.println("Ingrese la cantidad de carros");
+        ncarros = leer.datoInt();
+
+        for (int i = 0; i < ncarros; i++) {
+            System.out.println("Cual es el ultimo digito de las placas del carro numero " + (i + 1));
+            carros = leer.datoInt();
+            if (carros == 1 || carros == 2) {
+                camarillo++;
+            } else if (carros == 3 || carros == 4) {
+                crosa++;
+            } else if (carros == 5 || carros == 6) {
+                croja++;
+            } else if (carros == 7 || carros == 8) {
+                cverde++;
+            } else if (carros == 9 || carros == 0) {
+                cazul++;
+            }
+
+        }
+            System.out.println("");
+            System.out.println("RESULTADO");
+        
+        System.out.println("Ingresaron " + camarillo + " Placas amarillas");
+        System.out.println("Ingresaron " + crosa + " Placas rosas");
+        System.out.println("Ingresaron " + croja + " Placas rojas");
+        System.out.println("Ingresaron " + cverde + " Placas verdes");
+        System.out.println("Ingresaron " + cazul + " Placas azules");
+        
+        System.out.println("");
+        System.out.println("");
     }
 
 }
