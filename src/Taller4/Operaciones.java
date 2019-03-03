@@ -1,136 +1,122 @@
-package Taller3;
+package Taller4;
+
+import java.util.Arrays;
 
 public class Operaciones {
 
     public void ejercicio1() {
 
-        System.out.println("");
-        System.out.println("");
-        System.out.println("*******");
-        System.out.println("AJEDREZ");
-        System.out.println("*******");
-         int fila, col, f, c;
-        System.out.println("Ingrese la fila");
-        f = leer.datoInt();
-        System.out.println("Ingrese la columna");
-        c = leer.datoInt();
-        if (f >= 1 && f <= 8 && c >= 1 && c <= 8) {
-            for (fila = 1; fila <= 8; fila++) {
-                for (col = 1; col <= 8; col++) {
-                    if (f == fila && c == col) {
-                        System.out.print(" Q ");
-                    } else if (col == fila) {
-                        System.out.print(" Y ");
-                    }else if (col + fila == 9) {
-                        System.out.print(" Y ");
-                    } else if ((col + fila) % 2 == 0) {
-                        System.out.print(" B ");
-                    } else {
-                        System.out.print(" N ");
-                    }
-                }
-                System.out.println("");
-            }
-        } else {
-            System.out.println("Error");
-        }
-        System.out.println("");
-        System.out.println("");
-    }
-
-    
-    
-    
-    
-    
-    
-    
-    void ejercicio2() {
-        int Num1, Num2, Num3;
-      System.out.println("");
-        System.out.println("");
-        System.out.println("*******");
-        System.out.println("MENOR A MAYOR");
-        System.out.println("*******");
-        
-        System.out.println("Ingrese El Primer Numero");
-        Num1=leer.datoInt();
-        
-         System.out.println("Ingrese El Segundo Numero");
-        Num2=leer.datoInt();
-        
-         System.out.println("Ingrese El Tercer Numero");
-        Num3=leer.datoInt();
-        
-        
-           System.out.println("");
-            System.out.println("RESULTADO");
-        
-        
-        if (Num1 < Num2 && Num1 < Num3) {
-            if (Num2 < Num3) {
-                System.out.println(Num1 + " " + Num2 + " " + Num3 );
-            } else {
-                 System.out.println(Num1 + " " + Num3 + " " + Num2 );
-            }
-        }
-        else if (Num2 < Num1 && Num2 < Num3) {
-            if (Num1 < Num3) {
-                System.out.println(Num2 + " " + Num1 + " " + Num3 );
-            } else {
-                 System.out.println(Num2 + " " + Num3 + " " + Num1 );
-            }
-        }  
-       
-        else if (Num3 < Num1 && Num3 < Num2) {
-            if (Num3 < Num2) {
-                System.out.println(Num3 + " " + Num1 + " " + Num3 );
-            } else {
-                 System.out.println(Num3 + " " + Num2 + " " + Num3 );
-            }
-        } 
-          System.out.println("");
-          System.out.println("");
-    }
-
-      
-        
-        
-    void ejercicio3() {
-       System.out.println("");
-        System.out.println("");
-        System.out.println("*******");
-        System.out.println("PLACA DE AUTOS");
-        System.out.println("*******");
-            int ncarros = 0, carros, camarillo = 0, crosa = 0, croja = 0, cverde = 0, cazul = 0;
-        System.out.println("Ingrese la cantidad de carros");
-        ncarros = leer.datoInt();
-
-        for (int i = 0; i < ncarros; i++) {
-            System.out.println("Cual es el ultimo digito de las placas del carro numero " + (i + 1));
-            carros = leer.datoInt();
-            if (carros == 1 || carros == 2) {
-                camarillo++;
-            } else if (carros == 3 || carros == 4) {
-                crosa++;
-            } else if (carros == 5 || carros == 6) {
-                croja++;
-            } else if (carros == 7 || carros == 8) {
-                cverde++;
-            } else if (carros == 9 || carros == 0) {
-                cazul++;
-            }
-
-        }
+        int numeros[] = new int[5];
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Ingrese el numero para la posicion " + i + " = ");
+            numeros[i] = leer.datoInt();
             System.out.println("");
-            System.out.println("RESULTADO");
+
+        }
+
+        Arrays.sort(numeros);
+
+        for (int numero : numeros) {
+            System.out.print(numero + "\t");
+        }
         
-        System.out.println("Ingresaron " + camarillo + " Placas amarillas");
-        System.out.println("Ingresaron " + crosa + " Placas rosas");
-        System.out.println("Ingresaron " + croja + " Placas rojas");
-        System.out.println("Ingresaron " + cverde + " Placas verdes");
-        System.out.println("Ingresaron " + cazul + " Placas azules");
-        
+        System.out.println("");
+        System.out.println("");
+    }
+
+    void ejercicio2() {
+
+        int contPos = 0, contNeg = 0, j = 0, k = 0;
+        int numeros[] = new int[6];
+
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Ingrese el numero para la posicion " + i + " = ");
+            numeros[i] = leer.datoInt();
+            System.out.println("");
+
+            if (numeros[i] > 0) {
+                contPos++;
+            } else {
+                contNeg++;
+            }
+        }
+
+        int[] positivos = new int[contPos];
+        int[] negativos = new int[contNeg];
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > 0) {
+                positivos[j] = numeros[i];
+                j++;
+            } else {
+                negativos[k] = numeros[i];
+                k++;
+            }
+        }
+
+        Arrays.sort(positivos);
+        Arrays.sort(negativos);
+
+        System.out.println("Numeros Positivos");
+        j = 0;
+        for (int i = positivos.length; i > 0; i--) {
+            System.out.print(positivos[(i - 1)] + "\t");
+            j++;
+        }
+        System.out.println("");
+
+        System.out.println("Numeros negativos");
+        for (int i = 0; i < negativos.length; i++) {
+            System.out.print(negativos[i] + "\t");
+        }
+
+        System.out.println("");
+        System.out.println("");
+    }
+
+    void ejercicio3() {
+        // @ShenGilon coloque el tercer punto aquí y lo manda
+    }
+
+    void ejercicio4() {
+
+        int nElementos, j = 0;
+        System.out.print("Ingrese el tamaño del vector = ");
+        nElementos = leer.datoInt();
+
+        int[] vector = new int[nElementos];
+        int[] inverso = new int[nElementos];
+        int[] suma = new int[nElementos];
+
+        for (int i = 0; i < nElementos; i++) {
+            System.out.print("Ingrese el numero en la posición " + i + " = ");
+            vector[i] = leer.datoInt();
+        }
+
+        for (int i = nElementos; i > 0; i--) {
+            inverso[j] = vector[(i - 1)];
+            j++;
+        }
+
+        for (int i = 0; i < nElementos; i++) {
+            suma[i] = (vector[i] + inverso[i]);
+        }
+
+        System.out.println("El vector es:");
+        for (int i = 0; i < nElementos; i++) {
+            System.out.print(vector[i] + "\t");
+        }
+        System.out.println("");
+        System.out.println("El inverso es:");
+        for (int i = 0; i < nElementos; i++) {
+            System.out.print(inverso[i] + "\t");
+        }
+        System.out.println("");
+        System.out.println("La suma del vector es:");
+        for (int i = 0; i < nElementos; i++) {
+            System.out.print(suma[i] + "\t");
+        }
+
         System.out.println("");
         System.out.println("");
     }
