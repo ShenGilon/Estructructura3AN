@@ -75,7 +75,25 @@ public class Operaciones {
     }
 
     void ejercicio3() {
-        // @ShenGilon coloque el tercer punto aquí y lo manda
+     int b, cont = 0;
+        int numeros[] = new int[5];
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Ingrese el numero para la posicion " + i + " = ");
+            numeros[i] = leer.datoInt();
+            System.out.println("");
+        }
+
+        System.out.println("Que numero desea buscar?");
+        b = leer.datoInt();
+        for (int i = 0; i < numeros.length; i++) {
+            if (b == numeros[i]) {
+                cont++;
+
+            }
+
+        }
+        System.out.println("El numero que busco se repite " +cont+ " veces");
+        System.out.println("");
     }
 
     void ejercicio4() {
